@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:type" content="website"  />
+    <title>This initial owes you!</title>
+    <script src="fonts.js"></script>
+    <script src="js-pixel-fonts.js"></script>
+    <script src="index.js" async defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+</head>
+<body>
+    <div id="flex-container">
+        <div id="message">This initial owes you a <span id="emoji"></span>:</div>
+        <div id="drawing"></div>
+        <button id="refresh" onclick="getNewCombo()">Try Again?</button>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #flex-container *:not(#emoji) {
+        margin: 10px;
+    }
+</style>
